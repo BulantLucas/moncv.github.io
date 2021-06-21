@@ -20,6 +20,7 @@ nav {
     background: transparent;
     position: fixed;
     transition: all 0.3s ease-out;
+    z-index: 1;
 }
 #logo{
     width: 0%;
