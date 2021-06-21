@@ -1,0 +1,253 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.outer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height:60px;
+    background: transparent;
+    position: fixed;
+    transition: all 0.3s ease-out;
+}
+#logo{
+    width: 0%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.anim-nav {
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+.liste {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.home {
+    height: 100%;
+    background-image: url(file:///Users/lucasbulant/Desktop/ÉCOLE%20LA%20MANU/Module1/HTML%20CSS/monCvNumérique/ressources/IMG_2566.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 150px;
+    padding-left: 100px;
+    padding-top: 200px;
+    color: rgb(0, 0, 0);
+}
+h2 {
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 50px;
+    color: rgb(82, 78, 78);
+}
+
+p {
+    padding: 50px 100px;
+    text-align: justify;
+}
+
+button {
+    display: inline-block;
+    margin: 0px 70px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 20px 50px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.16);
+    cursor: pointer;
+    transition: .3s ease;
+    -webkit-transition: all 0.3s;
+}
+button:hover {
+    -webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.25);
+    transition: .3s ease;
+    -webkit-transition: all 0.3s;
+}
+
+strong {
+    font-weight: 700;
+}
+section {
+    padding: 80px 0px 60px 0px;
+}
+
+/* Effet au clic */
+
+.clickAnim {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #28A745, #007BFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Anim input */
+
+label, input {
+    width: 500px;
+    margin: 5px auto;
+    display: block;
+}
+label {
+    margin-top: 35px;
+}
+input {
+    padding: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* ABOUT */
+
+.box1 {
+    width: 370px;
+}
+.box1 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+  }
+
+.box2 {
+    vertical-align: top;
+    width: 755px;
+}
+.box2 h2 {
+    padding-bottom: 25px;
+}
+.box2 p {
+    padding: 10px 0px;
+    line-height: 30px;
+}
+
+.box3 {
+    display: none;
+}
+
+#buttons-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+button#cont {
+    background-color: #007BFF;
+}
+button#cv {
+    background-color: #28A745;
+}
+
+
+/* end about */
+
+/* SPACE-BETWEEN */
+.space-between {
+    text-align: justify;
+}
+.space-between:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.space-between .item {
+    display: inline-block;
+}
+/* end */
+
+.section-title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+section.grey {
+    background-color: #EBEBEB;
+}
+
+
+
