@@ -41,7 +41,8 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.item {
+.item1 {
+    color: #f1f1f1;
     margin: 0 10px;
     font-size: 22px;
 }
@@ -58,13 +59,19 @@ h1 {
     font-size: 150px;
     padding-left: 100px;
     padding-top: 200px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 h2 {
     font-size: 40px;
     padding-left: 100px;
     padding-top: 50px;
-    color: rgb(82, 78, 78);
+    color: rgb(233, 233, 233);
+}
+h3 {
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 50px;
+    color: rgb(2, 2, 2);
 }
 
 p {
