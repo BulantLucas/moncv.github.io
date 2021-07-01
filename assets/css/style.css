@@ -129,7 +129,11 @@ section {
     .img-container{
         width: 0%;
     }
+    .home{
+        background-image:url(../img/IMG_2743.PNG);
+        }
 }
+
 
 /* Anim input */
 
