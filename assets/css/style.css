@@ -420,6 +420,119 @@ section.grey {
     width: 30px;
 }
 
+@media screen and (max-width: 500px) {
+    .chat-global{
+        flex-direction: column;
+        width: 95%;
+    }
+    .conversation {
+        flex-direction: column;
+        width: 90%;
+    }
+    .talk{
+        flex-direction: column;
+        width: 100%;
+    }
+       
+ }
+/****** Contact *******/
+ 
+section#contact{
+    background-color: rgb(218, 213, 213);
+    padding: 100px 15px;
+}
+
+section#contact .container{
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 50px 10px #f8f6f6;
+
+}
+
+section#contact .container .title{
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+section#contact .container .title h6{
+    font-size: 1.3em;
+}
+
+section#contact .container .title h4{
+    font-size: 2.5em;
+}
+
+section#contact .container form input{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 600px;
+}
+
+section#contact .container form input{
+   width: 47%;
+}
+section#contact .container form input:hover,
+section#contact .container form textarea:hover{
+   border-bottom: 2px solid #007BFF;
+}
+section#contact .container form input,
+section#contact .container form textarea{
+   margin: 15px 30px;
+   padding: 10px;
+   box-sizing: border-box;
+   border: none;
+   outline: none;
+   border-bottom: 2px solid #EBEBEB;
+   transition: 0.2s;
+}
+
+section#contact .container form textarea{
+   width: 100%;
+   resize: none;
+   height: 100px;
+   margin-bottom: 60px;
+}
+section#contact .container form button{
+   border-radius: 8px;
+   border: none;
+   background-color: #007BFF;
+   color: #fff;
+   font-size: 1.2em;
+   cursor: pointer;
+   outline: none;
+   transition: 0.2s;
+
+}
+
+section#contact .container form button:hover{
+   transform: translate(-5px);
+   box-shadow: 0px 10px 40px 0px #b8b3b3;  
+}
+
+@media screen and (max-width: 500px) {
+   section#contact .container form{
+       flex-direction: column;
+       width: 80%;
+   }
+   section#contact .container form input{
+       width: 100%;
+       
+   }
+   .talk img{
+       width: 0%;
+   }
+}
+
 /** ******FOOTER*********/
 
 .footer-distributed {
@@ -489,97 +602,5 @@ section.grey {
         margin-top: 3px;
       }
   
- /****** Contact *******/
  
- section#contact{
-     background-color: rgb(218, 213, 213);
-     padding: 100px 15px;
- }
 
- section#contact .container{
-     max-width: 900px;
-     margin: 0px auto;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: center;
-     background-color: #fff;
-     padding: 60px 10px;
-     border-radius: 15px;
-     box-sizing: border-box;
-     box-shadow: 0px 10px 50px 10px #f8f6f6;
-
- }
-
- section#contact .container .title{
-     text-align: center;
-     color: black;
-     margin-bottom: 50px;
- }
-
- section#contact .container .title h6{
-     font-size: 1.3em;
- }
-
- section#contact .container .title h4{
-     font-size: 2.5em;
- }
-
- section#contact .container form input{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 600px;
-}
-
-section#contact .container form input{
-    width: 57%;
-}
-section#contact .container form input:hover,
-section#contact .container form textarea:hover{
-    border-bottom: 2px solid #007BFF;
-}
-section#contact .container form input,
-section#contact .container form textarea{
-    margin: 15px 30px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #EBEBEB;
-    transition: 0.2s;
-}
-
-section#contact .container form textarea{
-    width: 100%;
-    resize: none;
-    height: 100px;
-    margin-bottom: 60px;
-}
-section#contact .container form button{
-    border-radius: 8px;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    font-size: 1.2em;
-    cursor: pointer;
-    outline: none;
-    transition: 0.2s;
-
-}
-
-section#contact .container form button:hover{
-    transform: translate(-5px);
-    box-shadow: 0px 10px 40px 0px #b8b3b3;  
-}
-
-@media screen and (max-width: 500px) {
-    section#contact .container form{
-        flex-direction: column;
-        width: 95%;
-    }
-    section#contact .container form input{
-        width: 100%;
-        
-    }
-}
