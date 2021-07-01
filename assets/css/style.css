@@ -116,6 +116,21 @@ section {
     padding: 80px 0px 60px 0px;
 }
 
+@media screen and (max-width: 500px) {
+    .outer-container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .textligne{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .img-container{
+        width: 0%;
+    }
+}
+
 /* Anim input */
 
 label, input {
@@ -603,9 +618,10 @@ section#contact .container form button:hover{
       }
   
       @media screen and (max-width: 500px) {
-        ..footer-links{
+        .footer-links{
             flex-direction: column;
             width: 95%;
         }
+    }
  
 
