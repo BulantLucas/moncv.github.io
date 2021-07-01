@@ -602,5 +602,10 @@ section#contact .container form button:hover{
         margin-top: 3px;
       }
   
+      @media screen and (max-width: 500px) {
+        ..footer-links{
+            flex-direction: column;
+            width: 95%;
+        }
  
 
