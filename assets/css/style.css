@@ -42,28 +42,28 @@ nav {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #007BFF;
 }
+.navbar a:hover{
+    color: #007BFF;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .item1 {
     color: #ffffff;
     margin: 0 10px;
     font-size: 22px;
+
 }
 .hamburger {
     display: none;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
-
-.home {
+#home {
     height: 100%;
     background-image: url(https://i.ibb.co/y6yDyj5/IMG-2611.png);
     background-repeat: no-repeat;
