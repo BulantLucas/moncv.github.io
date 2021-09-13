@@ -91,6 +91,10 @@
     .lead-a{
         font-size: 20px;
     }
+    .masthead{
+        background-image:url(../img/mobile.PNG);
+    }
+
 }  
 /* Cookie Barre */
 .cookiealert {
